@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "invoice_items",
+  "info": {
+    "name": "Invoice Item",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "weight": {
+      "type": "integer"
+    },
+    "description": {
+      "type": "string"
+    },
+    "additional_details": {
+      "type": "text"
+    },
+    "unit_price": {
+      "type": "float"
+    },
+    "quantity": {
+      "type": "float"
+    },
+    "amount": {
+      "type": "float"
+    },
+    "invoice": {
+      "via": "invoice_item",
+      "model": "invoice"
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "workspaces",
+  "info": {
+    "name": "Workspace",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "token": {
+      "type": "biginteger"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "resource_type": {
+      "via": "workspace",
+      "model": "resource-type"
+    },
+    "template_estimate": {
+      "via": "workspace",
+      "model": "template-estimate"
+    },
+    "template_rate": {
+      "via": "workspace",
+      "model": "template-rates"
+    },
+    "user": {
+      "via": "workspace",
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}

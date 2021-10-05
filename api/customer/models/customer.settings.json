@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "customers",
+  "info": {
+    "name": "customer",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "customer_contacts": {
+      "via": "customer",
+      "collection": "customer-contact"
+    },
+    "customer_addresses": {
+      "via": "customer",
+      "collection": "customer-address"
+    },
+    "estimates": {
+      "via": "customer",
+      "collection": "estimate"
+    },
+    "workspace": {
+      "model": "workspace"
+    },
+    "invoice": {
+      "via": "customer",
+      "model": "invoice"
+    }
+  }
+}

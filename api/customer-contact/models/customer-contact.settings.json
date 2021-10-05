@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "customer_contacts",
+  "info": {
+    "name": "Customer Contact",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "customer": {
+      "via": "customer_contacts",
+      "model": "customer"
+    },
+    "name": {
+      "type": "string"
+    },
+    "position": {
+      "type": "string"
+    }
+  }
+}

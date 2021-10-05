@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "template_rates",
+  "info": {
+    "name": "Template Rate",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "template_rate_values": {
+      "via": "template_rate",
+      "collection": "template-rate-value"
+    },
+    "workspace": {
+      "model": "workspace",
+      "via": "template_rate"
+    }
+  }
+}

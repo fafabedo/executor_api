@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "estimate_lines",
+  "info": {
+    "name": "Estimate Line"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "estimate": {
+      "via": "estimate_lines",
+      "model": "estimate"
+    },
+    "summary": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "group": {
+      "type": "string"
+    },
+    "cost": {
+      "type": "float"
+    },
+    "estimate_line_resources": {
+      "via": "estimate_line",
+      "collection": "estimate-line-resource"
+    }
+  }
+}

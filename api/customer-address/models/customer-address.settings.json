@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "customer_addresses",
+  "info": {
+    "name": "Customer Address",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "customer": {
+      "via": "customer_addresses",
+      "model": "customer"
+    },
+    "address_1": {
+      "type": "string"
+    },
+    "address_2": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "state": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    }
+  }
+}

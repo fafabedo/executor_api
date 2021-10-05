@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "resource_types",
+  "info": {
+    "name": "Resource Type",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "template_rate_values": {
+      "via": "resource_type",
+      "collection": "template-rate-value"
+    },
+    "workspace": {
+      "model": "workspace",
+      "via": "resource_type"
+    }
+  }
+}

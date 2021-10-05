@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/template-estimate-columns",
+      "handler": "template-estimate-column.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/template-estimate-columns/count",
+      "handler": "template-estimate-column.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/template-estimate-columns/:id",
+      "handler": "template-estimate-column.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/template-estimate-columns",
+      "handler": "template-estimate-column.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/template-estimate-columns/:id",
+      "handler": "template-estimate-column.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/template-estimate-columns/:id",
+      "handler": "template-estimate-column.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

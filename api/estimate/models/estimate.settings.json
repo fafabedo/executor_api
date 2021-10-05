@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "estimates",
+  "info": {
+    "name": "Estimate",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "customer": {
+      "via": "estimates",
+      "model": "customer"
+    },
+    "issue_at": {
+      "type": "datetime"
+    },
+    "valid_until": {
+      "type": "datetime"
+    },
+    "summary": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "estimate_lines": {
+      "via": "estimate",
+      "collection": "estimate-line"
+    },
+    "template_rate": {
+      "model": "template-rates"
+    },
+    "workspace": {
+      "model": "workspace"
+    }
+  }
+}

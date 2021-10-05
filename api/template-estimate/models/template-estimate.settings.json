@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "template_estimates",
+  "info": {
+    "name": "Template Estimate",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "default": {
+      "type": "boolean"
+    },
+    "template_estimate_columns": {
+      "via": "template_estimate",
+      "collection": "template-estimate-column"
+    },
+    "workspace": {
+      "model": "workspace",
+      "via": "template_estimate"
+    }
+  }
+}

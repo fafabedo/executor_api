@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "estimate_line_resources",
+  "info": {
+    "name": "Estimate Line Resource",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "estimate_line": {
+      "model": "estimate-line",
+      "via": "estimate_line_resources"
+    },
+    "hours": {
+      "type": "float"
+    },
+    "cost": {
+      "type": "float"
+    },
+    "notes": {
+      "type": "richtext"
+    },
+    "resource_type": {
+      "model": "resource-type"
+    }
+  }
+}

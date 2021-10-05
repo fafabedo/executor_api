@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "primary_navs",
+  "info": {
+    "name": "Primary Nav"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "menu": {
+      "type": "json"
+    }
+  }
+}

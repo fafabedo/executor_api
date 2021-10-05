@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/estimate-lines",
+      "handler": "estimate-line.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/estimate-lines/count",
+      "handler": "estimate-line.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/estimate-lines/:id",
+      "handler": "estimate-line.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/estimate-lines",
+      "handler": "estimate-line.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/estimate-lines/:id",
+      "handler": "estimate-line.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/estimate-lines/:id",
+      "handler": "estimate-line.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

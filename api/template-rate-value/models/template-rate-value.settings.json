@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "template_rate_values",
+  "info": {
+    "name": "Template Rate Value"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "template_rate": {
+      "via": "template_rate_values",
+      "model": "template-rates"
+    },
+    "resource_type": {
+      "via": "template_rate_values",
+      "model": "resource-type"
+    },
+    "rate": {
+      "type": "float"
+    }
+  }
+}

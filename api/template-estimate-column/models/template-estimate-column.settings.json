@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "template_estimate_columns",
+  "info": {
+    "name": "Template Estimate Column"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "template_estimate": {
+      "via": "template_estimate_columns",
+      "model": "template-estimate"
+    },
+    "name": {
+      "type": "string"
+    },
+    "percent": {
+      "type": "float"
+    },
+    "fixed_value": {
+      "type": "float"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/template-rate-values",
+      "handler": "template-rate-value.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/template-rate-values/count",
+      "handler": "template-rate-value.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/template-rate-values/:id",
+      "handler": "template-rate-value.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/template-rate-values",
+      "handler": "template-rate-value.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/template-rate-values/:id",
+      "handler": "template-rate-value.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/template-rate-values/:id",
+      "handler": "template-rate-value.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
