@@ -1,0 +1,13 @@
+@import "variables";
+
+@import "partials/theme";
+@import "partials/jqxwidgets";
+@import "partials/button";
+@import "partials/form";
+
+section {
+  .-title {
+    font-family: $font-family-secondary;
+    text-transform: uppercase;
+  }
+}

@@ -1,0 +1,42 @@
+@import "../variables";
+
+.jqx-widget-header {
+  border-color: $secondary-light !important;
+  background: $brand-secondary-color !important;
+  font-weight: bold;
+  font-family: $font-family-primary;
+}
+
+.jqx-widget-content {
+  font-family: $font-family-primary !important;
+}
+
+.jqx-fill-state-pressed {
+  background-color: $secondary-dark;
+  color: $text-secondary-color;
+  font-family: $font-family-primary;
+
+  &.jqx-button {
+    color: $text-secondary-color;
+  }
+}
+
+.jqx-button {
+  text-transform: uppercase;
+  font-size: 12px;
+
+  &.jqx-fill-state-normal {
+    background-color: $secondary-dark;
+    color: $text-secondary-color !important;
+    font-family: $font-family-primary !important;
+  }
+
+  &.jqx-fill-state-hover {
+    background: $secondary-light !important;
+  }
+
+  &.jqx-fill-state-pressed {
+    background: $primary-light !important;
+  }
+
+}
