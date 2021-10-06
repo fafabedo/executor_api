@@ -1,4 +1,10 @@
-# LamaNager
+# Executor App
+
+Web Application aiming manage estimate, projects and billing for projects
+
+## Tech stack
+NuxtJS as Frontend 
+Strapi as Backend with MySQL
 
 ## Build Setup
 
@@ -19,3 +25,5 @@ $ yarn generate
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
 # executor_app
+
+
