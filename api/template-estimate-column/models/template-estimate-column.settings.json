@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "template_estimate_columns",
   "info": {
-    "name": "Template Estimate Column"
+    "name": "Template Estimate Column",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -23,6 +24,10 @@
     },
     "fixed_value": {
       "type": "float"
+    },
+    "resource_type": {
+      "model": "resource-type",
+      "via": "template_estimate_column"
     }
   }
 }

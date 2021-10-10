@@ -22,6 +22,13 @@
     "workspace": {
       "model": "workspace",
       "via": "resource_type"
+    },
+    "color": {
+      "type": "string"
+    },
+    "template_estimate_column": {
+      "via": "resource_type",
+      "model": "template-estimate-column"
     }
   }
 }
